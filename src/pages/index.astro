@@ -9,7 +9,7 @@ import '../styles/global.css';
 import catalogo from '../data/catalogo.json';
 import CategorySection from '../components/CategorySection.astro';
 import {
-  SITE_TITLE, SITE_DESCRIPTION, VEHICULOS, WHATSAPP_NUMBER,
+  SITE_TITLE, SITE_DESCRIPTION, VEHICULOS, WHATSAPP_NUMBERS,
 } from '../config';
 import { waLink, MENSAJE_GENERAL } from '../lib/whatsapp';
 
@@ -31,7 +31,7 @@ const total = catalogo.categorias.reduce((n, c) => n + c.productos.length, 0);
     <meta property="og:description" content={SITE_DESCRIPTION} />
     <meta property="og:image" content="/og.jpg" />
   </head>
-  <body data-wa={WHATSAPP_NUMBER}>
+  <body data-wa={WHATSAPP_NUMBERS.join(',')}>
     <header class="top">
       <img src="/logo-blanco.png" alt="Ruedas Darío 4x4" width="700" height="196" />
       <a class="top__wa" href={waLink(MENSAJE_GENERAL)} target="_blank" rel="noopener">WhatsApp</a>
@@ -128,7 +128,8 @@ const total = catalogo.categorias.reduce((n, c) => n + c.productos.length, 0);
       const sections = $$<HTMLElement>('.cat');
       const empty = $('#empty');
       const activebar = $('#activebar');
-      const wa = document.body.dataset.wa;
+      const numbers = document.body.dataset.wa!.split(',');
+      const randomNumber = () => numbers[Math.floor(Math.random() * numbers.length)];
 
       let activeCat = 'all';
       let activeVeh = '';
@@ -151,7 +152,7 @@ const total = catalogo.categorias.reduce((n, c) => n + c.productos.length, 0);
         compat: norm(el.dataset.compat || ''),
       }));
 
-      const waUrl = (text: string) => `https://wa.me/${wa}?text=${encodeURIComponent(text)}`;
+      const waUrl = (text: string) => `https://wa.me/${randomNumber()}?text=${encodeURIComponent(text)}`;
 
       function apply() {
         const terms = activeVeh ? vehTerms[activeVeh] : [];
@@ -282,6 +283,12 @@ const total = catalogo.categorias.reduce((n, c) => n + c.productos.length, 0);
         if (qty <= 0) cart.delete(id); else cart.set(id, { label: labels[id], qty: Math.min(99, qty) });
         save(); renderCart();
       }
+
+      // Cada vez que se abre WhatsApp se elige un número al azar entre los disponibles.
+      document.addEventListener('click', (e) => {
+        const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[href*="wa.me/"]');
+        if (a) a.href = a.href.replace(/wa\.me\/\d+/, `wa.me/${randomNumber()}`);
+      }, true);
 
       document.addEventListener('click', (e) => {
         const t = e.target as HTMLElement;
