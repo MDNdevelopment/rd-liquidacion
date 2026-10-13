@@ -1,0 +1,323 @@
+{
+  "categorias": [
+    {
+      "id": "suspension",
+      "nombre": "Suspensión y amortiguación",
+      "subtitulo": "Kits de suspensión, amortiguadores y tijeras",
+      "productos": [
+        {
+          "id": "nitro-charger-sport",
+          "nombre": "Suspensión Nitro Charger Sport",
+          "detalle": "Kit de suspensión. También disponible kit con sistema airbag y ballestas parabólicas para Land Cruiser serie 79.",
+          "compatibilidad": [
+            "Ford Ranger 2011-2022",
+            "Ford Ranger MY22 2022",
+            "Toyota Land Cruiser serie 71-76-78-79",
+            "Toyota Land Cruiser 150",
+            "Toyota Land Cruiser 250",
+            "Toyota Land Cruiser 300",
+            "Toyota Autana (serie 80)",
+            "Toyota 4Runner 2006-2010",
+            "Toyota 4Runner 2011-2024",
+            "Toyota Tundra 2007-2021",
+            "Toyota Tacoma 2007-2019",
+            "Toyota Roraima 2007-2019",
+            "Jeep WK"
+          ]
+        },
+        {
+          "id": "mt64",
+          "nombre": "Suspensión MT64",
+          "detalle": "Kit de suspensión",
+          "compatibilidad": [
+            "Toyota Hilux Revo 2015-2026",
+            "Toyota Fortuner 2016-2026",
+            "Toyota 4Runner 2011-2024",
+            "Toyota Land Cruiser serie 71-76-78-79",
+            "Toyota FJ 2026",
+            "Ford Everest 2026"
+          ]
+        },
+        {
+          "id": "bp51",
+          "nombre": "Suspensión BP-51",
+          "detalle": "Kit de suspensión",
+          "compatibilidad": [
+            "Toyota Hilux Revo 2015-2026",
+            "Toyota Fortuner 2015-2026",
+            "Toyota 4Runner 2011-2024",
+            "Toyota Land Cruiser serie 71-76-78-79",
+            "Toyota Land Cruiser 150",
+            "Toyota Land Cruiser 250",
+            "Toyota Land Cruiser 300"
+          ]
+        },
+        {
+          "id": "rough-country",
+          "nombre": "Kits de suspensión Rough Country",
+          "marca": "Rough Country",
+          "compatibilidad": [
+            "Chevrolet Tahoe / Silverado",
+            "Ford F150 2003-2008",
+            "Ford F150 2008-2014",
+            "Toyota 4Runner 2008-2024"
+          ]
+        },
+        {
+          "id": "fabtech",
+          "nombre": "Kit de suspensión 4\"",
+          "marca": "Fabtech",
+          "compatibilidad": ["Ford Super Duty"]
+        },
+        {
+          "id": "bilstein-b6",
+          "nombre": "Amortiguadores B6",
+          "marca": "Bilstein",
+          "compatibilidad": ["Ford Explorer"]
+        },
+        {
+          "id": "monroe",
+          "nombre": "Amortiguadores",
+          "marca": "Monroe",
+          "compatibilidad": []
+        },
+        {
+          "id": "camburg",
+          "nombre": "Tijeras superiores",
+          "marca": "Camburg Kinetic",
+          "compatibilidad": []
+        }
+      ]
+    },
+    {
+      "id": "frenos",
+      "nombre": "Frenos y tren delantero",
+      "subtitulo": "Pastillas, discos, tren delantero y rodamientos",
+      "productos": [
+        {
+          "id": "hawk",
+          "nombre": "Pastillas y discos de freno",
+          "marca": "Hawk Performance",
+          "compatibilidad": []
+        },
+        {
+          "id": "wagner",
+          "nombre": "Pastillas y discos de freno",
+          "marca": "Wagner",
+          "compatibilidad": []
+        },
+        {
+          "id": "powerstop",
+          "nombre": "Pastillas y discos de freno",
+          "marca": "PowerStop",
+          "compatibilidad": []
+        },
+        {
+          "id": "moog-tren",
+          "nombre": "Tren delantero",
+          "marca": "Moog",
+          "detalle": "Para los vehículos que manejamos",
+          "compatibilidad": []
+        },
+        {
+          "id": "555-tren",
+          "nombre": "Tren delantero",
+          "marca": "555",
+          "detalle": "Para los vehículos que manejamos",
+          "compatibilidad": []
+        },
+        {
+          "id": "moog-rodamientos",
+          "nombre": "Rodamientos delanteros y traseros",
+          "marca": "Moog",
+          "compatibilidad": []
+        }
+      ]
+    },
+    {
+      "id": "motor",
+      "nombre": "Motor, aceites y baterías",
+      "subtitulo": "Aceites, filtros, intake, módulos y baterías",
+      "productos": [
+        {
+          "id": "optima-yellow",
+          "nombre": "Batería YellowTop (amarilla)",
+          "marca": "Optima",
+          "compatibilidad": []
+        },
+        {
+          "id": "optima-red",
+          "nombre": "Batería RedTop (roja)",
+          "marca": "Optima",
+          "compatibilidad": []
+        },
+        {
+          "id": "optima-blue",
+          "nombre": "Batería BlueTop (azul)",
+          "marca": "Optima",
+          "compatibilidad": []
+        },
+        {
+          "id": "aceite-shell",
+          "nombre": "Aceites",
+          "marca": "Shell",
+          "compatibilidad": []
+        },
+        {
+          "id": "aceite-motorcraft",
+          "nombre": "Aceites",
+          "marca": "Motorcraft",
+          "compatibilidad": []
+        },
+        {
+          "id": "aceite-motul",
+          "nombre": "Aceites",
+          "marca": "Motul",
+          "compatibilidad": []
+        },
+        {
+          "id": "aceite-wolf",
+          "nombre": "Aceites para vehículos diésel",
+          "marca": "Wolf",
+          "compatibilidad": []
+        },
+        {
+          "id": "kn-filtros",
+          "nombre": "Filtros de cabina y de motor",
+          "marca": "K&N",
+          "detalle": "Para varias camionetas",
+          "compatibilidad": []
+        },
+        {
+          "id": "trd-intake",
+          "nombre": "Intake",
+          "marca": "TRD",
+          "compatibilidad": ["Toyota Tacoma", "Toyota 4Runner"]
+        },
+        {
+          "id": "modulos-gasolina",
+          "nombre": "Módulos de gasolina",
+          "marca": "Toyota",
+          "compatibilidad": ["Toyota"]
+        }
+      ]
+    },
+    {
+      "id": "exterior",
+      "nombre": "Exterior y protección",
+      "subtitulo": "Defensas, estribos, bedliner, tapas, lonas y luces",
+      "productos": [
+        {
+          "id": "bedliner",
+          "nombre": "Bedliner",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Hilux Revo con reja",
+            "Toyota Hilux Kavak",
+            "Toyota Land Cruiser 79",
+            "Ford Ranger",
+            "Ford Super Duty 150",
+            "Mitsubishi Sportero 2008",
+            "Kaicene F70 y modelo anterior",
+            "Dongfeng",
+            "Changan"
+          ]
+        },
+        {
+          "id": "santa-maria",
+          "nombre": "Santa María eléctrica",
+          "compatibilidad": ["Ford Wildtrak", "Mitsubishi L200", "Toyota Hilux Revo"]
+        },
+        {
+          "id": "tapa-trifold",
+          "nombre": "Tapa trifold",
+          "compatibilidad": []
+        },
+        {
+          "id": "lonas",
+          "nombre": "Lonas",
+          "compatibilidad": []
+        },
+        {
+          "id": "estribos-viper",
+          "nombre": "Estribos",
+          "marca": "Viper4WD",
+          "compatibilidad": []
+        },
+        {
+          "id": "estribos-trd",
+          "nombre": "Estribos",
+          "marca": "TRD Pro",
+          "compatibilidad": ["Toyota 4Runner"]
+        },
+        {
+          "id": "skid-arb",
+          "nombre": "Skid plate",
+          "marca": "ARB",
+          "compatibilidad": []
+        },
+        {
+          "id": "defensa-viper",
+          "nombre": "Defensa central y skid plate",
+          "marca": "Viper4WD",
+          "compatibilidad": ["Kaicene"]
+        },
+        {
+          "id": "barras-tiro",
+          "nombre": "Barras de tiro",
+          "compatibilidad": []
+        },
+        {
+          "id": "faros-fortuner",
+          "nombre": "Faros traseros",
+          "compatibilidad": ["Toyota Fortuner 2012-2015"]
+        },
+        {
+          "id": "luces-katd",
+          "nombre": "Luces",
+          "marca": "KATD",
+          "compatibilidad": []
+        }
+      ]
+    },
+    {
+      "id": "interior",
+      "nombre": "Interior y sonido",
+      "subtitulo": "Alfombras, volantes y cornetas",
+      "productos": [
+        {
+          "id": "alfombras-katd",
+          "nombre": "Alfombras",
+          "marca": "KATD",
+          "detalle": "Para ciertos modelos",
+          "compatibilidad": []
+        },
+        {
+          "id": "alfombras-weathertech",
+          "nombre": "Alfombras",
+          "marca": "WeatherTech",
+          "detalle": "Para ciertos modelos",
+          "compatibilidad": []
+        },
+        {
+          "id": "alfombras-promat",
+          "nombre": "Alfombras",
+          "marca": "Promat",
+          "detalle": "Para ciertos modelos",
+          "compatibilidad": []
+        },
+        {
+          "id": "volantes",
+          "nombre": "Volantes",
+          "compatibilidad": []
+        },
+        {
+          "id": "jbl",
+          "nombre": "Cornetas para hogar y salidas",
+          "marca": "JBL",
+          "compatibilidad": []
+        }
+      ]
+    }
+  ]
+}

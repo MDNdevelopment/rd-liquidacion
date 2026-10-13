@@ -1,0 +1,21 @@
+---
+import ProductCard from './ProductCard.astro';
+import type { Producto } from '../lib/whatsapp';
+
+interface Props {
+  categoria: { id: string; nombre: string; subtitulo: string; productos: Producto[] };
+}
+const { categoria: c } = Astro.props;
+---
+<section class="cat" id={c.id} data-cat={c.id}>
+  <header class="cat__head">
+    <div>
+      <h2>{c.nombre}</h2>
+      <p>{c.subtitulo}</p>
+    </div>
+  </header>
+  <div class="stripe" aria-hidden="true"></div>
+  <div class="grid">
+    {c.productos.map((p, i) => <ProductCard producto={p} n={i + 1} />)}
+  </div>
+</section>

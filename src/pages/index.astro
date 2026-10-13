@@ -1,0 +1,312 @@
+---
+import '@fontsource/barlow/400.css';
+import '@fontsource/barlow/600.css';
+import '@fontsource/barlow/700.css';
+import '@fontsource/big-shoulders-display/700';
+import '@fontsource/big-shoulders-display/800';
+import '@fontsource/big-shoulders-display/900';
+import '../styles/global.css';
+import catalogo from '../data/catalogo.json';
+import CategorySection from '../components/CategorySection.astro';
+import {
+  SITE_TITLE, SITE_DESCRIPTION, VEHICULOS, WHATSAPP_NUMBER,
+} from '../config';
+import { waLink, MENSAJE_GENERAL } from '../lib/whatsapp';
+
+const slug = (t: string) => t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+const total = catalogo.categorias.reduce((n, c) => n + c.productos.length, 0);
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{SITE_TITLE}</title>
+    <meta name="description" content={SITE_DESCRIPTION} />
+    <meta name="theme-color" content="#1C1A18" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={SITE_TITLE} />
+    <meta property="og:description" content={SITE_DESCRIPTION} />
+    <meta property="og:image" content="/og.jpg" />
+  </head>
+  <body data-wa={WHATSAPP_NUMBER}>
+    <header class="top">
+      <img src="/logo-blanco.png" alt="Ruedas Darío 4x4" width="700" height="196" />
+      <a class="top__wa" href={waLink(MENSAJE_GENERAL)} target="_blank" rel="noopener">WhatsApp</a>
+    </header>
+
+    <section class="hero">
+      <div class="hero__panel"><div class="hero__inner">
+        <p class="hero__kicker">Repuestos y accesorios 4x4</p>
+        <h1><span class="h1__a">Stock</span> <span class="h1__b">disponible</span></h1>
+        <p class="hero__lead">Agrega al carrito lo que te interesa y toca el botón de WhatsApp: se abre el chat con tu lista lista, solo envíala y te respondemos con precio y disponibilidad.</p>
+      </div></div>
+    </section>
+
+    <!-- Filtros: chips que se acomodan en varias filas, todo a la vista -->
+    <section class="filtros" id="filtros" aria-label="Filtros">
+      <div class="fxp">
+        <h2 class="fx__title">¿Qué estás buscando?</h2>
+        <div class="wrap">
+          <button type="button" class="pill pill--lg" data-set-cat="all" data-name="Todo">Todo</button>
+          {catalogo.categorias.map((c) => (
+            <button type="button" class="pill pill--lg" data-set-cat={c.id} data-name={c.nombre}>{c.nombre}</button>
+          ))}
+        </div>
+        <h2 class="fx__title">¿Para qué camioneta?</h2>
+        <div class="wrap">
+          <button type="button" class="pill pill--lg" data-set-veh="">Cualquiera</button>
+          {VEHICULOS.map((v) => (
+            <button type="button" class="pill pill--lg" data-set-veh={v.label} data-slug={slug(v.label)} data-terms={v.terms.join('|')}>{v.label}</button>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Resumen fijo cuando hay filtros puestos -->
+    <div class="activebar" id="activebar" hidden>
+      <p>Mostrando: <strong id="ab-text"></strong></p>
+      <button type="button" data-edit>Cambiar</button>
+      <button type="button" data-clear>Ver todo ✕</button>
+    </div>
+
+    <main id="resultados">
+      {catalogo.categorias.map((c) => <CategorySection categoria={c} />)}
+
+      <div id="empty" class="empty" hidden>
+        <p>No encontramos “<strong id="empty-q"></strong>” en la lista, pero puede que lo tengamos.</p>
+        <a id="empty-wa" class="btn-wa" href={waLink(MENSAJE_GENERAL)} target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+      </div>
+    </main>
+
+    <footer class="foot">
+      <img src="/logo-blanco.png" alt="Ruedas Darío 4x4" width="700" height="196" />
+      <p>Precios y disponibilidad por WhatsApp</p>
+    </footer>
+
+    <a class="fab" href={waLink(MENSAJE_GENERAL)} target="_blank" rel="noopener" id="fab" aria-label="Escribir por WhatsApp">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M20.5 3.5A11.8 11.8 0 0 0 12 0 12 12 0 0 0 1.6 17.9L0 24l6.3-1.6A12 12 0 0 0 12 24a12 12 0 0 0 8.5-20.5ZM12 21.9a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1 1 12 21.9Zm5.4-7.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-1 1.2c-.2.2-.4.2-.7.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-1-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.4 3.4 14.7 14.7 0 0 0 5.6 4.9c2 .8 2.8.9 3.8.7a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3Z"/></svg>
+    </a>
+
+    <div class="cartbar" id="cartbar" hidden>
+      <button type="button" class="cartbar__cart" id="cart-open" aria-label="Ver carrito">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM1 2v2h2l3.6 7.6-1.4 2.4A2 2 0 0 0 7 17h12v-2H7.4l1.1-2h7.5a2 2 0 0 0 1.7-1l3.6-6.5A1 1 0 0 0 20.4 4H5.2l-.9-2H1Z"/></svg>
+        <span class="cartbar__count" id="cart-count">0</span>
+      </button>
+      <a class="cartbar__wa" id="cart-wa" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M20.5 3.5A11.8 11.8 0 0 0 12 0 12 12 0 0 0 1.6 17.9L0 24l6.3-1.6A12 12 0 0 0 12 24a12 12 0 0 0 8.5-20.5ZM12 21.9a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1 1 12 21.9Zm5.4-7.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-1 1.2c-.2.2-.4.2-.7.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-1-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.4 3.4 14.7 14.7 0 0 0 5.6 4.9c2 .8 2.8.9 3.8.7a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3Z"/></svg>
+        <span>Consultar por WhatsApp</span>
+      </a>
+    </div>
+
+    <dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+      <header class="sheet__head">
+        <h2 id="sheet-title">Tu carrito</h2>
+        <button type="button" class="sheet__close" id="sheet-close" aria-label="Cerrar">✕</button>
+      </header>
+      <ul class="sheet__list" id="sheet-list"></ul>
+      <p class="sheet__empty" id="sheet-empty" hidden>Tu carrito está vacío.</p>
+      <footer class="sheet__foot">
+        <a class="cartbar__wa" id="sheet-wa" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M20.5 3.5A11.8 11.8 0 0 0 12 0 12 12 0 0 0 1.6 17.9L0 24l6.3-1.6A12 12 0 0 0 12 24a12 12 0 0 0 8.5-20.5ZM12 21.9a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.9 9.9 0 1 1 12 21.9Zm5.4-7.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-1 1.2c-.2.2-.4.2-.7.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-1-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.4 3.4 14.7 14.7 0 0 0 5.6 4.9c2 .8 2.8.9 3.8.7a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3Z"/></svg>
+          <span>Consultar por WhatsApp</span>
+        </a>
+        <button type="button" class="sheet__clear" id="cart-clear">Vaciar carrito</button>
+      </footer>
+    </dialog>
+
+    <script>
+      import { carritoMensaje } from '../lib/whatsapp';
+
+      const norm = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+      const $ = <T extends Element>(s: string) => document.querySelector<T>(s)!;
+      const $$ = <T extends Element>(s: string) => Array.from(document.querySelectorAll<T>(s));
+
+      const cards = $$<HTMLElement>('.card');
+      const sections = $$<HTMLElement>('.cat');
+      const empty = $('#empty');
+      const activebar = $('#activebar');
+      const wa = document.body.dataset.wa;
+
+      let activeCat = 'all';
+      let activeVeh = '';
+
+      const catNames: Record<string, string> = {};
+      for (const el of $$<HTMLElement>('[data-set-cat]')) catNames[el.dataset.setCat!] = el.dataset.name!;
+      const vehTerms: Record<string, string[]> = {};
+      for (const el of $$<HTMLElement>('[data-set-veh][data-terms]')) vehTerms[el.dataset.setVeh!] = el.dataset.terms!.split('|');
+
+      const vehSlugs: Record<string, string> = {};
+      const slugToVeh: Record<string, string> = {};
+      for (const el of $$<HTMLElement>('[data-set-veh][data-slug]')) {
+        vehSlugs[el.dataset.setVeh!] = el.dataset.slug!;
+        slugToVeh[el.dataset.slug!] = el.dataset.setVeh!;
+      }
+
+      const index = cards.map((el) => ({
+        el,
+        text: norm(el.dataset.search || ''),
+        compat: norm(el.dataset.compat || ''),
+      }));
+
+      const waUrl = (text: string) => `https://wa.me/${wa}?text=${encodeURIComponent(text)}`;
+
+      function apply() {
+        const terms = activeVeh ? vehTerms[activeVeh] : [];
+        let shown = 0;
+
+        for (const { el, text, compat } of index) {
+          // Sin compatibilidad específica = sirve para cualquiera; con ella, debe coincidir.
+          const okVeh = !terms.length || !compat || terms.some((t) => compat.includes(t));
+          const okCat = activeCat === 'all' || el.closest<HTMLElement>('.cat')!.dataset.cat === activeCat;
+          const ok = okVeh && okCat;
+          el.hidden = !ok;
+          if (ok) shown++;
+        }
+        for (const s of sections) s.hidden = !s.querySelector('.card:not([hidden])');
+
+        empty.hidden = shown > 0;
+        if (!shown) {
+          const label = [activeVeh].filter(Boolean).join(' · ');
+          $('#empty-q').textContent = label || catNames[activeCat];
+          $<HTMLAnchorElement>('#empty-wa').href = waUrl(`Hola Ruedas Darío 👋 Busco: ${label || catNames[activeCat]}. ¿Lo tienen disponible?`);
+        }
+
+        // Todos los controles reflejan el mismo estado.
+        for (const el of $$<HTMLElement>('[data-set-cat]')) el.classList.toggle('is-active', el.dataset.setCat === activeCat);
+        for (const el of $$<HTMLElement>('[data-set-veh]')) el.classList.toggle('is-active', el.dataset.setVeh === activeVeh);
+
+        const parts = [activeCat !== 'all' ? catNames[activeCat] : '', activeVeh].filter(Boolean);
+        $('#ab-text').textContent = parts.join(' · ');
+        activebar.hidden = parts.length === 0;
+
+        const url = new URL(location.href);
+        if (activeCat !== 'all') url.searchParams.set('categoria', activeCat); else url.searchParams.delete('categoria');
+        if (activeVeh) url.searchParams.set('camioneta', vehSlugs[activeVeh]); else url.searchParams.delete('camioneta');
+        history.replaceState(null, '', url);
+        renderCart();
+      }
+
+      const results = () => document.getElementById('resultados')!;
+      const panel = () => document.getElementById('filtros');
+
+      function setCat(id: string) {
+        activeCat = id;
+        apply();
+        results().scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      function setVeh(label: string) {
+        activeVeh = activeVeh === label ? '' : label;
+        apply();
+      }
+
+      document.addEventListener('click', (e) => {
+        const t = e.target as HTMLElement;
+        const cat = t.closest<HTMLElement>('[data-set-cat]');
+        if (cat) { e.preventDefault(); return setCat(cat.dataset.setCat!); }
+        const veh = t.closest<HTMLElement>('[data-set-veh]');
+        if (veh) return setVeh(veh.dataset.setVeh!);
+        if (t.closest('[data-edit]')) return panel()?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (t.closest('[data-clear]')) {
+          activeCat = 'all'; activeVeh = '';
+          apply();
+          panel()?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+
+      // ---------- carrito ----------
+      const KEY = 'rd-cart';
+      const cart = new Map<string, { label: string; qty: number }>();
+      const labels: Record<string, string> = {};
+      for (const el of cards) labels[el.dataset.id!] = el.dataset.label!;
+
+      try {
+        const saved = JSON.parse(localStorage.getItem(KEY) || '[]');
+        for (const [id, qty] of saved) if (labels[id] && qty > 0) cart.set(id, { label: labels[id], qty: Math.min(99, qty | 0) });
+      } catch {}
+
+      const save = () => {
+        try { localStorage.setItem(KEY, JSON.stringify([...cart].map(([id, i]) => [id, i.qty]))); } catch {}
+      };
+
+      const cartbar = $('#cartbar');
+      const fab = $('#fab');
+      const sheet = $<HTMLDialogElement>('#sheet');
+      const list = $('#sheet-list');
+      const count = $('#cart-count');
+
+      function renderCart() {
+        const n = [...cart.values()].reduce((a, i) => a + i.qty, 0);
+        const href = n ? waUrl(carritoMensaje([...cart.values()], activeVeh)) : '#';
+        for (const a of [$<HTMLAnchorElement>('#cart-wa'), $<HTMLAnchorElement>('#sheet-wa')]) {
+          a.href = href;
+          a.querySelector('span')!.textContent = n ? `Consultar (${n}) por WhatsApp` : 'Consultar por WhatsApp';
+        }
+        if (count.textContent !== String(n)) {
+          count.textContent = String(n);
+          count.classList.remove('bump'); void count.offsetWidth; count.classList.add('bump');
+        }
+        cartbar.hidden = n === 0;
+        fab.hidden = n > 0;
+        document.body.classList.toggle('has-cart', n > 0);
+
+        for (const el of cards) {
+          const inCart = cart.has(el.dataset.id!);
+          const b = el.querySelector<HTMLButtonElement>('[data-add]')!;
+          b.setAttribute('aria-pressed', String(inCart));
+          b.classList.toggle('is-in', inCart);
+          b.querySelector('.btn-add__icon')!.textContent = inCart ? '✓' : '＋';
+          b.querySelector('.btn-add__text')!.textContent = inCart ? 'En el carrito · quitar' : 'Agregar al carrito';
+        }
+
+        list.innerHTML = '';
+        for (const [id, i] of cart) {
+          const li = document.createElement('li');
+          li.dataset.id = id;
+          li.innerHTML = `<span class="sheet__name"></span>
+            <span class="qty"><button type="button" data-dec aria-label="Menos">−</button><output>${i.qty}</output><button type="button" data-inc aria-label="Más">＋</button></span>
+            <button type="button" class="sheet__rm" data-rm aria-label="Quitar">✕</button>`;
+          li.querySelector('.sheet__name')!.textContent = i.label;
+          list.append(li);
+        }
+        $('#sheet-empty').hidden = n > 0;
+        if (!n && sheet.open) sheet.close();
+      }
+
+      function change(id: string, delta: number) {
+        const cur = cart.get(id);
+        const qty = (cur?.qty ?? 0) + delta;
+        if (qty <= 0) cart.delete(id); else cart.set(id, { label: labels[id], qty: Math.min(99, qty) });
+        save(); renderCart();
+      }
+
+      document.addEventListener('click', (e) => {
+        const t = e.target as HTMLElement;
+        const add = t.closest<HTMLElement>('[data-add]');
+        if (add) { const id = add.closest<HTMLElement>('.card')!.dataset.id!; return change(id, cart.has(id) ? -99 : 1); }
+        const row = t.closest<HTMLElement>('#sheet-list li');
+        if (row) {
+          const id = row.dataset.id!;
+          if (t.closest('[data-inc]')) return change(id, 1);
+          if (t.closest('[data-dec]')) return change(id, -1);
+          if (t.closest('[data-rm]')) return change(id, -99);
+        }
+        if (t.closest('#cart-open')) return sheet.showModal();
+        if (t.closest('#sheet-close') || t === sheet) return sheet.close();
+        if (t.closest('#cart-clear')) { cart.clear(); save(); renderCart(); }
+      });
+
+      // Estado inicial desde la URL (?categoria=frenos&camioneta=hilux)
+      const q = new URLSearchParams(location.search);
+      const qc = q.get('categoria');
+      if (qc && catNames[qc]) activeCat = qc;
+      const qv = q.get('camioneta');
+      if (qv && slugToVeh[qv]) activeVeh = slugToVeh[qv];
+      apply();
+      if (activeCat !== 'all') results().scrollIntoView({ behavior: 'instant' as ScrollBehavior, block: 'start' });
+    </script>
+  </body>
+</html>

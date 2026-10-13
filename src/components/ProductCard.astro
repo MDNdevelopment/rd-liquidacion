@@ -1,0 +1,43 @@
+---
+import { productoLabel, type Producto } from '../lib/whatsapp';
+
+interface Props { producto: Producto; n: number }
+const { producto: p, n } = Astro.props;
+const MAX = 3;
+const visibles = p.compatibilidad.slice(0, MAX);
+const extra = p.compatibilidad.slice(MAX);
+const search = [p.nombre, p.marca, p.detalle, ...p.compatibilidad].filter(Boolean).join(' ');
+---
+<article
+  class="card"
+  data-id={p.id}
+  data-search={search}
+  data-compat={p.compatibilidad.join(' | ')}
+  data-label={productoLabel(p)}
+>
+  {p.marca && <p class="card__brand">{p.marca}</p>}
+  <h3 class="card__name">{p.nombre}</h3>
+  {p.detalle && <p class="card__detail">{p.detalle}</p>}
+
+  {p.compatibilidad.length > 0 && (
+    <div class="card__compat">
+      <span class="card__compat-title">Compatible con</span>
+      <ul class="chips">
+        {visibles.map((c) => <li>{c}</li>)}
+      </ul>
+      {extra.length > 0 && (
+        <details>
+          <summary>+{extra.length} más</summary>
+          <ul class="chips">
+            {extra.map((c) => <li>{c}</li>)}
+          </ul>
+        </details>
+      )}
+    </div>
+  )}
+
+  <button type="button" class="btn-add" data-add aria-pressed="false">
+    <span class="btn-add__icon" aria-hidden="true">＋</span>
+    <span class="btn-add__text">Agregar al carrito</span>
+  </button>
+</article>
