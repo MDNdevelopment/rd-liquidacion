@@ -166,10 +166,11 @@ details summary { cursor: pointer; margin-top: 6px; padding: 6px 0; width: max-c
 .cartbar__count.bump { animation: bump .3s; }
 @keyframes bump { 50% { transform: scale(1.35); } }
 .cartbar__wa {
-  flex: 1; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 60px; padding: 0 14px;
-  border-radius: 8px; background: var(--wa); color: var(--black); text-decoration: none; white-space: nowrap;
-  font: 900 1.4rem var(--display); letter-spacing: .04em; text-transform: uppercase;
+  flex: 1; min-width: 0; display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 60px; padding: 6px 10px;
+  border-radius: 8px; background: var(--wa); color: var(--black); text-decoration: none; text-align: center;
+  font: 900 clamp(1.05rem, 5.2vw, 1.4rem)/1 var(--display); letter-spacing: .03em; text-transform: uppercase;
 }
+.cartbar__wa svg { flex: none; }
 .cartbar__wa:hover, .cartbar__wa:focus-visible { background: #35d474; }
 @media (min-width: 720px) {
   .cartbar { left: 50%; right: auto; bottom: 16px; width: 560px; transform: translateX(-50%); border: 3px solid var(--yellow); border-radius: 12px; }
