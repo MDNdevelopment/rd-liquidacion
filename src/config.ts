@@ -1,5 +1,5 @@
 // Números de WhatsApp (código de país + número, solo dígitos). Al contactar se elige uno al azar.
-export const WHATSAPP_NUMBERS = ['584146842498', '584246368716', '584246439327'];
+export const WHATSAPP_NUMBERS = ['584146842498', '584246368716', '584246439327', '584146519332'];
 // Valor por defecto para el HTML estático; el script lo reemplaza por uno aleatorio al hacer clic.
 export const WHATSAPP_NUMBER = WHATSAPP_NUMBERS[0];
 
