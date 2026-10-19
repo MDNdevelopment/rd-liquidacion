@@ -1,9 +1,350 @@
 {
   "categorias": [
     {
+      "id": "cauchos",
+      "nombre": "Cauchos",
+      "subtitulo": "Cauchos para camionetas, autos y carga en muchas medidas",
+      "productos": [
+        {
+          "id": "cauchos-advance",
+          "nombre": "Cauchos",
+          "marca": "Advance",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-annaite",
+          "nombre": "Cauchos",
+          "marca": "Annaite",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-aplus",
+          "nombre": "Cauchos",
+          "marca": "Aplus",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-arivo",
+          "nombre": "Cauchos",
+          "marca": "Arivo",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-bfgoodrich",
+          "nombre": "Cauchos",
+          "marca": "BFGoodrich",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-black-eagle",
+          "nombre": "Cauchos",
+          "marca": "Black Eagle",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-bridgestone",
+          "nombre": "Cauchos",
+          "marca": "Bridgestone",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-cst",
+          "nombre": "Cauchos",
+          "marca": "CST",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-champiro",
+          "nombre": "Cauchos",
+          "marca": "Champiro",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-compasal",
+          "nombre": "Cauchos",
+          "marca": "Compasal",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-continental",
+          "nombre": "Cauchos",
+          "marca": "Continental",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-delinte",
+          "nombre": "Cauchos",
+          "marca": "Delinte",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-double-coin",
+          "nombre": "Cauchos",
+          "marca": "Double Coin",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-dunlop",
+          "nombre": "Cauchos",
+          "marca": "Dunlop",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-falken",
+          "nombre": "Cauchos",
+          "marca": "Falken",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-firemax",
+          "nombre": "Cauchos",
+          "marca": "Firemax",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-forerunner",
+          "nombre": "Cauchos",
+          "marca": "Forerunner",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-fujisaki",
+          "nombre": "Cauchos",
+          "marca": "Fujisaki",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-general",
+          "nombre": "Cauchos",
+          "marca": "General",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-hengtar",
+          "nombre": "Cauchos",
+          "marca": "Hengtar",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-hilo",
+          "nombre": "Cauchos",
+          "marca": "Hilo",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-joyroad",
+          "nombre": "Cauchos",
+          "marca": "Joyroad",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-kobata",
+          "nombre": "Cauchos",
+          "marca": "Kobata",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-kumho",
+          "nombre": "Cauchos",
+          "marca": "Kumho",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-landsail",
+          "nombre": "Cauchos",
+          "marca": "Landsail",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-lionlord",
+          "nombre": "Cauchos",
+          "marca": "Lionlord",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-maxtrek",
+          "nombre": "Cauchos",
+          "marca": "Maxtrek",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-maxxis",
+          "nombre": "Cauchos",
+          "marca": "Maxxis",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-michelin",
+          "nombre": "Cauchos",
+          "marca": "Michelin",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-nankang",
+          "nombre": "Cauchos",
+          "marca": "Nankang",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-nitto",
+          "nombre": "Cauchos",
+          "marca": "Nitto",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-pirelli",
+          "nombre": "Cauchos",
+          "marca": "Pirelli",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-rapid",
+          "nombre": "Cauchos",
+          "marca": "Rapid",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-roadguider",
+          "nombre": "Cauchos",
+          "marca": "Roadguider",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-royal-black",
+          "nombre": "Cauchos",
+          "marca": "Royal Black",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-tourador",
+          "nombre": "Cauchos",
+          "marca": "Tourador",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-toyo",
+          "nombre": "Cauchos",
+          "marca": "Toyo",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-transmate",
+          "nombre": "Cauchos",
+          "marca": "Transmate",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-triangle",
+          "nombre": "Cauchos",
+          "marca": "Triangle",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-v-netix",
+          "nombre": "Cauchos",
+          "marca": "V-Netix",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-vantage",
+          "nombre": "Cauchos",
+          "marca": "Vantage",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-vitour",
+          "nombre": "Cauchos",
+          "marca": "Vitour",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-yokohama",
+          "nombre": "Cauchos",
+          "marca": "Yokohama",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-zeta",
+          "nombre": "Cauchos",
+          "marca": "Zeta",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-ilink",
+          "nombre": "Cauchos",
+          "marca": "iLink",
+          "compatibilidad": []
+        },
+        {
+          "id": "cauchos-otras",
+          "nombre": "Cauchos (otras marcas)",
+          "compatibilidad": []
+        }
+      ]
+    },
+    {
+      "id": "rines",
+      "nombre": "Rines",
+      "subtitulo": "Rines, separadores y centralizadores",
+      "productos": [
+        {
+          "id": "separadores-ksp",
+          "nombre": "Separadores de rines",
+          "marca": "KSP",
+          "compatibilidad": []
+        },
+        {
+          "id": "centralizadores-rines",
+          "nombre": "Centralizadores de rines",
+          "compatibilidad": []
+        },
+        {
+          "id": "rines-otros",
+          "nombre": "Rines (varias marcas)",
+          "compatibilidad": []
+        },
+        {
+          "id": "rines-black-rhino",
+          "nombre": "Rines",
+          "marca": "Black Rhino",
+          "compatibilidad": []
+        },
+        {
+          "id": "rines-bwa",
+          "nombre": "Rines",
+          "marca": "Bwa",
+          "compatibilidad": []
+        },
+        {
+          "id": "rines-fuel",
+          "nombre": "Rines",
+          "marca": "Fuel",
+          "compatibilidad": []
+        },
+        {
+          "id": "rines-niche",
+          "nombre": "Rines",
+          "marca": "Niche",
+          "compatibilidad": []
+        },
+        {
+          "id": "rines-trd",
+          "nombre": "Rines",
+          "marca": "TRD",
+          "compatibilidad": []
+        },
+        {
+          "id": "rines-toyota",
+          "nombre": "Rines originales",
+          "marca": "Toyota",
+          "compatibilidad": []
+        }
+      ]
+    },
+    {
       "id": "suspension",
       "nombre": "Suspensión y amortiguación",
-      "subtitulo": "Kits de suspensión, amortiguadores y tijeras",
+      "subtitulo": "Kits de suspensión, amortiguadores, espirales, ballestas y tijeras",
       "productos": [
         {
           "id": "nitro-charger-sport",
@@ -35,7 +376,16 @@
             "Toyota 4Runner 2011-2024",
             "Toyota Land Cruiser serie 71-76-78-79",
             "Toyota FJ 2026",
-            "Ford Everest 2026"
+            "Ford Everest 2026",
+            "Toyota Tacoma",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Land Cruiser 250",
+            "Toyota Prado",
+            "Toyota FJ Cruiser",
+            "Toyota Fortuner Dubai",
+            "Toyota Land Cruiser 300",
+            "Toyota Land Cruiser 200",
+            "Toyota Roraima"
           ]
         },
         {
@@ -49,7 +399,11 @@
             "Toyota Land Cruiser serie 71-76-78-79",
             "Toyota Land Cruiser 150",
             "Toyota Land Cruiser 250",
-            "Toyota Land Cruiser 300"
+            "Toyota Land Cruiser 300",
+            "Toyota Fortuner Dubai",
+            "Toyota Tundra",
+            "Toyota FJ Cruiser",
+            "Toyota Roraima"
           ]
         },
         {
@@ -60,31 +414,336 @@
             "Chevrolet Tahoe / Silverado",
             "Ford F150 2003-2008",
             "Ford F150 2008-2014",
-            "Toyota 4Runner 2008-2024"
+            "Toyota 4Runner 2008-2024",
+            "Chevrolet Silverado",
+            "Ford Super Duty",
+            "Jeep Liberty KK"
           ]
         },
         {
           "id": "fabtech",
           "nombre": "Kit de suspensión 4\"",
           "marca": "Fabtech",
-          "compatibilidad": ["Ford Super Duty"]
+          "compatibilidad": [
+            "Ford Super Duty"
+          ]
         },
         {
           "id": "bilstein-b6",
           "nombre": "Amortiguadores B6",
           "marca": "Bilstein",
-          "compatibilidad": ["Ford Explorer"]
+          "compatibilidad": [
+            "Ford Explorer"
+          ]
         },
         {
           "id": "monroe",
           "nombre": "Amortiguadores",
           "marca": "Monroe",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Ford Expedition",
+            "Ford Explorer",
+            "Toyota Corolla",
+            "Ford F150",
+            "Chevrolet Tahoe",
+            "Toyota 4Runner",
+            "Toyota FJ Cruiser",
+            "Toyota Camry",
+            "Ford Super Duty"
+          ]
         },
         {
           "id": "camburg",
           "nombre": "Tijeras superiores",
           "marca": "Camburg Kinetic",
+          "compatibilidad": [
+            "Toyota Fortuner",
+            "Toyota Tacoma",
+            "Toyota 4Runner",
+            "Toyota Land Cruiser 300",
+            "Toyota Land Cruiser 250"
+          ]
+        },
+        {
+          "id": "bp51-medios-kits",
+          "nombre": "Medios kits BP-51",
+          "marca": "Old Man Emu",
+          "detalle": "4 amortiguadores y fitting kits",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Land Cruiser serie 70 (Machito)"
+          ]
+        },
+        {
+          "id": "mt64-medios-kits",
+          "nombre": "Medios kits MT64",
+          "marca": "Old Man Emu",
+          "detalle": "4 amortiguadores y espirales",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Land Cruiser serie 70 (Machito)"
+          ]
+        },
+        {
+          "id": "leveling-ksp",
+          "nombre": "Leveling kits",
+          "marca": "KSP",
+          "compatibilidad": []
+        },
+        {
+          "id": "ome-repuestos-bp51",
+          "nombre": "Repuestos BP-51",
+          "marca": "Old Man Emu",
+          "detalle": "Amortiguadores, bujes y fitting kits",
+          "compatibilidad": [
+            "Toyota Land Cruiser serie 70 (Machito)"
+          ]
+        },
+        {
+          "id": "ome-repuestos-mt64",
+          "nombre": "Repuestos MT64",
+          "marca": "Old Man Emu",
+          "detalle": "Amortiguadores, espirales y bujes",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Fortuner Dubai",
+            "Toyota Land Cruiser 250",
+            "Toyota Land Cruiser 200"
+          ]
+        },
+        {
+          "id": "ome-airbag",
+          "nombre": "Kits de airbag para ballestas",
+          "marca": "Old Man Emu",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Land Cruiser serie 70 (Machito)"
+          ]
+        },
+        {
+          "id": "ome-gemelos",
+          "nombre": "Gemelos engrasables",
+          "marca": "Old Man Emu",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Hilux Kavak",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Land Cruiser Hembrita",
+            "Toyota Tundra",
+            "Ford Explorer",
+            "Ford Escape",
+            "Jeep Liberty KK",
+            "Mitsubishi L200",
+            "Chevrolet D-Max"
+          ]
+        },
+        {
+          "id": "ome-amortiguadores",
+          "nombre": "Amortiguadores",
+          "marca": "Old Man Emu",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux Revo",
+            "Toyota Hilux Kavak",
+            "Toyota Hilux",
+            "Toyota Fortuner Dubai",
+            "Toyota Fortuner",
+            "Toyota Land Cruiser 300",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Autana (serie 80)",
+            "Toyota Roraima",
+            "Toyota Prado",
+            "Toyota FJ Cruiser",
+            "Toyota Tacoma",
+            "Toyota Tundra",
+            "Ford Ranger",
+            "Ford Super Duty",
+            "Jeep Grand Cherokee WK2",
+            "Jeep Grand Cherokee WK",
+            "Jeep Liberty KK",
+            "Mitsubishi L200",
+            "Mitsubishi Montero",
+            "Nissan Frontier",
+            "Nissan Pathfinder",
+            "Chevrolet D-Max"
+          ]
+        },
+        {
+          "id": "ome-espirales",
+          "nombre": "Espirales",
+          "marca": "Old Man Emu",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux Kavak",
+            "Toyota Hilux",
+            "Toyota Fortuner",
+            "Toyota Land Cruiser 300",
+            "Toyota Land Cruiser 250",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Autana (serie 80)",
+            "Toyota Roraima",
+            "Toyota Prado",
+            "Toyota FJ Cruiser",
+            "Toyota Tacoma",
+            "Toyota Tundra",
+            "Ford Ranger",
+            "Ford Super Duty",
+            "Jeep Grand Cherokee WK2",
+            "Jeep Grand Cherokee WK",
+            "Jeep Liberty KK",
+            "Mitsubishi L200",
+            "Mitsubishi Montero",
+            "Nissan Navara",
+            "Nissan Frontier",
+            "Nissan Pathfinder"
+          ]
+        },
+        {
+          "id": "ome-ballestas",
+          "nombre": "Ballestas",
+          "marca": "Old Man Emu",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Hilux Kavak",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Land Cruiser Hembrita",
+            "Toyota Tacoma",
+            "Toyota Tundra",
+            "Mitsubishi L200"
+          ]
+        },
+        {
+          "id": "ome-barra-estabilizadora",
+          "nombre": "Kits para barra estabilizadora",
+          "marca": "Old Man Emu",
+          "compatibilidad": [
+            "Toyota Land Cruiser 250",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Tundra",
+            "Nissan Navara"
+          ]
+        },
+        {
+          "id": "ome-espaciadores",
+          "nombre": "Espaciadores",
+          "marca": "Old Man Emu",
+          "compatibilidad": [
+            "Toyota Fortuner Dubai",
+            "Toyota Land Cruiser 250",
+            "Toyota Tacoma",
+            "Toyota Tundra"
+          ]
+        },
+        {
+          "id": "ome-mesetas",
+          "nombre": "Mesetas y muñones",
+          "marca": "Old Man Emu",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux Revo",
+            "Toyota Fortuner Dubai",
+            "Toyota Land Cruiser 300",
+            "Toyota Land Cruiser 250",
+            "Toyota Land Cruiser",
+            "Toyota Roraima",
+            "Toyota Prado",
+            "Toyota FJ Cruiser",
+            "Toyota Tacoma",
+            "Toyota Tundra"
+          ]
+        },
+        {
+          "id": "ome-bujes",
+          "nombre": "Bujes y kits de adaptación",
+          "marca": "Old Man Emu",
+          "compatibilidad": [
+            "Toyota Land Cruiser 250",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Autana (serie 80)",
+            "Toyota Tacoma"
+          ]
+        },
+        {
+          "id": "ome-repuestos",
+          "nombre": "Tornillos U y repuestos",
+          "marca": "Old Man Emu",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux Revo",
+            "Toyota Hilux Kavak",
+            "Toyota Fortuner Dubai",
+            "Toyota Fortuner",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Roraima",
+            "Toyota FJ Cruiser",
+            "Toyota Tacoma",
+            "Toyota Tundra",
+            "Ford Ranger",
+            "Ford Super Duty",
+            "Mitsubishi L200",
+            "Nissan Frontier",
+            "Chevrolet D-Max"
+          ]
+        },
+        {
+          "id": "amortiguadores-kyb",
+          "nombre": "Amortiguadores",
+          "marca": "KYB",
+          "compatibilidad": [
+            "Toyota Corolla",
+            "Jeep Grand Cherokee WK2"
+          ]
+        },
+        {
+          "id": "espirales-metalcar",
+          "nombre": "Espirales",
+          "marca": "Metalcar",
+          "compatibilidad": [
+            "Chevrolet Tahoe"
+          ]
+        },
+        {
+          "id": "guardapolvos",
+          "nombre": "Guardapolvos de amortiguador",
+          "compatibilidad": [
+            "Ford Explorer"
+          ]
+        },
+        {
+          "id": "corrector-diferencial",
+          "nombre": "Corrector de diferencial",
+          "marca": "TMT",
+          "compatibilidad": [
+            "Toyota 4Runner"
+          ]
+        },
+        {
+          "id": "rep-amortiguadores",
+          "nombre": "Amortiguadores (otras marcas)",
+          "compatibilidad": [
+            "Toyota Corolla",
+            "Ford Super Duty",
+            "Ford Escape"
+          ]
+        },
+        {
+          "id": "rep-tijeras",
+          "nombre": "Tijeras",
+          "compatibilidad": [
+            "Jeep Grand Cherokee WK2"
+          ]
+        },
+        {
+          "id": "suspension-otros",
+          "nombre": "Espirales y kits de nivelación",
+          "compatibilidad": [
+            "Ford Explorer",
+            "Mitsubishi L200"
+          ]
+        },
+        {
+          "id": "space-arm",
+          "nombre": "Barras estabilizadoras Space Arm",
           "compatibilidad": []
         }
       ]
@@ -98,46 +757,250 @@
           "id": "hawk",
           "nombre": "Pastillas y discos de freno",
           "marca": "Hawk Performance",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Chevrolet Tahoe",
+            "Chevrolet Avalanche",
+            "Toyota Corolla",
+            "Ford Explorer",
+            "Chevrolet Silverado",
+            "Jeep Grand Cherokee WK2",
+            "Chevrolet Suburban",
+            "Jeep Liberty KK",
+            "Toyota Prado",
+            "Toyota Autana (serie 80)",
+            "Ford Super Duty",
+            "Toyota Camry",
+            "Toyota 4Runner",
+            "Toyota Fortuner"
+          ]
         },
         {
           "id": "wagner",
           "nombre": "Pastillas y discos de freno",
           "marca": "Wagner",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Chevrolet Silverado",
+            "Chevrolet Tahoe",
+            "Chevrolet Avalanche",
+            "Ford Super Duty",
+            "Toyota Corolla",
+            "Toyota Camry",
+            "Toyota 4Runner",
+            "Toyota Hilux Revo",
+            "Toyota Hilux Kavak",
+            "Toyota Fortuner Dubai",
+            "Toyota FJ Cruiser",
+            "Toyota Tacoma"
+          ]
         },
         {
           "id": "powerstop",
           "nombre": "Pastillas y discos de freno",
           "marca": "PowerStop",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Fortuner Dubai",
+            "Chevrolet Silverado",
+            "Chevrolet Tahoe",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Autana (serie 80)",
+            "Toyota Prado",
+            "Toyota FJ Cruiser",
+            "Jeep Grand Cherokee WK2",
+            "Toyota Roraima",
+            "Toyota Sequoia",
+            "Toyota Tundra",
+            "Ford Explorer",
+            "Toyota Corolla",
+            "Toyota Camry",
+            "Toyota Land Cruiser 300"
+          ]
         },
         {
           "id": "moog-tren",
           "nombre": "Tren delantero",
           "marca": "Moog",
           "detalle": "Para los vehículos que manejamos",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota FJ Cruiser",
+            "Ford Explorer",
+            "Chevrolet Silverado",
+            "Chevrolet Tahoe",
+            "Jeep Grand Cherokee WK",
+            "Chevrolet Avalanche",
+            "Jeep Liberty KK",
+            "Toyota Prado",
+            "Ford Super Duty",
+            "Toyota Tundra",
+            "Toyota Corolla"
+          ]
         },
         {
           "id": "555-tren",
           "nombre": "Tren delantero",
           "marca": "555",
           "detalle": "Para los vehículos que manejamos",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Toyota Hilux Kavak",
+            "Toyota Fortuner",
+            "Toyota 4Runner",
+            "Toyota Prado",
+            "Toyota Roraima"
+          ]
         },
         {
           "id": "moog-rodamientos",
           "nombre": "Rodamientos delanteros y traseros",
           "marca": "Moog",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota FJ Cruiser",
+            "Toyota Hilux Kavak",
+            "Toyota Fortuner",
+            "Chevrolet Silverado",
+            "Chevrolet Tahoe",
+            "Chevrolet Avalanche",
+            "Toyota Tacoma"
+          ]
+        },
+        {
+          "id": "frenos-toyota",
+          "nombre": "Pastillas y discos de freno originales",
+          "marca": "Toyota",
+          "compatibilidad": [
+            "Toyota Land Cruiser",
+            "Toyota Sequoia",
+            "Toyota Tundra",
+            "Toyota Corolla",
+            "Toyota Yaris"
+          ]
+        },
+        {
+          "id": "bandas-freno",
+          "nombre": "Bandas de freno",
+          "detalle": "Originales y Aisin",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Hilux Kavak",
+            "Toyota Fortuner Dubai",
+            "Toyota Fortuner"
+          ]
+        },
+        {
+          "id": "liga-frenos",
+          "nombre": "Liga de frenos",
           "compatibilidad": []
+        },
+        {
+          "id": "grasa-frenos",
+          "nombre": "Grasa para frenos",
+          "marca": "Lubrisil",
+          "compatibilidad": []
+        },
+        {
+          "id": "frenos-otras",
+          "nombre": "Pastillas y discos de freno (otras marcas)",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux Revo",
+            "Toyota Hilux Kavak",
+            "Toyota Fortuner Dubai",
+            "Toyota Fortuner",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Roraima",
+            "Toyota Prado",
+            "Toyota FJ Cruiser",
+            "Toyota Sequoia",
+            "Toyota Tacoma",
+            "Toyota Tundra",
+            "Ford F150",
+            "Ford Super Duty",
+            "Chevrolet Tahoe",
+            "Jeep Grand Cherokee WK"
+          ]
+        },
+        {
+          "id": "repuestos-toyota",
+          "nombre": "Repuestos originales",
+          "marca": "Toyota",
+          "detalle": "Terminales, rótulas, rodamientos, estoperas y más",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux",
+            "Toyota Land Cruiser 300",
+            "Toyota Land Cruiser serie 70 (Machito)"
+          ]
+        },
+        {
+          "id": "rep-estabilizadora",
+          "nombre": "Barras estabilizadoras y gomas",
+          "compatibilidad": [
+            "Ford Explorer",
+            "Chevrolet Silverado",
+            "Jeep Grand Cherokee WK2"
+          ]
+        },
+        {
+          "id": "rep-rodamientos",
+          "nombre": "Rodamientos y rolineras",
+          "compatibilidad": [
+            "Toyota Autana (serie 80)",
+            "Toyota Corolla",
+            "Ford Explorer",
+            "Ford Escape",
+            "Jeep Grand Cherokee WK2"
+          ]
+        },
+        {
+          "id": "rep-rotulas",
+          "nombre": "Rótulas, terminales y mesetas",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux Revo",
+            "Toyota Hilux Kavak",
+            "Toyota Hilux",
+            "Toyota Fortuner",
+            "Toyota Tacoma",
+            "Ford Escape",
+            "Chevrolet Silverado",
+            "Changan Kaicene F70"
+          ]
+        },
+        {
+          "id": "rep-bujes",
+          "nombre": "Bujes de barra y suspensión",
+          "compatibilidad": [
+            "Toyota Autana (serie 80)",
+            "Jeep Grand Cherokee WK2"
+          ]
+        },
+        {
+          "id": "rep-otros",
+          "nombre": "Otros repuestos",
+          "detalle": "Gomas de trípode, grasas, anillos y más",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux Kavak",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Autana (serie 80)",
+            "Toyota Corolla",
+            "Toyota Camry",
+            "Ford F150",
+            "Ford Explorer",
+            "Ford Escape",
+            "Chevrolet Silverado",
+            "Chevrolet Tahoe",
+            "Jeep Grand Cherokee WK2",
+            "Mitsubishi L200"
+          ]
         }
       ]
     },
     {
       "id": "motor",
       "nombre": "Motor, aceites y baterías",
-      "subtitulo": "Aceites, filtros, intake, módulos y baterías",
+      "subtitulo": "Aceites, filtros, intake, baterías y cargadores",
       "productos": [
         {
           "id": "optima-yellow",
@@ -186,19 +1049,182 @@
           "nombre": "Filtros de cabina y de motor",
           "marca": "K&N",
           "detalle": "Para varias camionetas",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota FJ Cruiser",
+            "Jeep Liberty KK",
+            "Mitsubishi L200",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Jeep Grand Cherokee WK2",
+            "Ford Explorer",
+            "Toyota Autana (serie 80)",
+            "Toyota Hilux Revo",
+            "Toyota Fortuner Dubai",
+            "Ford Super Duty",
+            "Toyota Roraima",
+            "Toyota Tundra",
+            "Toyota Sequoia",
+            "Ford Escape",
+            "Toyota Hilux Kavak",
+            "Toyota Corolla",
+            "Toyota Yaris",
+            "Toyota Land Cruiser 300",
+            "Toyota Land Cruiser 250",
+            "Chevrolet Silverado",
+            "Chevrolet Tahoe",
+            "Chevrolet Avalanche",
+            "Toyota Tacoma",
+            "Toyota Camry",
+            "Toyota Prado",
+            "Mitsubishi Montero",
+            "Chevrolet D-Max"
+          ]
         },
         {
           "id": "trd-intake",
           "nombre": "Intake",
           "marca": "TRD",
-          "compatibilidad": ["Toyota Tacoma", "Toyota 4Runner"]
+          "compatibilidad": [
+            "Toyota Tacoma",
+            "Toyota 4Runner"
+          ]
         },
         {
           "id": "modulos-gasolina",
           "nombre": "Módulos de gasolina",
           "marca": "Toyota",
-          "compatibilidad": ["Toyota"]
+          "compatibilidad": [
+            "Toyota"
+          ]
+        },
+        {
+          "id": "kn-limpiador-combustible",
+          "nombre": "Limpiador de sistema de combustible",
+          "marca": "K&N",
+          "compatibilidad": []
+        },
+        {
+          "id": "noco",
+          "nombre": "Cargadores, arrancadores y accesorios",
+          "marca": "NOCO",
+          "compatibilidad": []
+        },
+        {
+          "id": "maxilub",
+          "nombre": "Aceite de transmisión, refrigerante y liga de frenos",
+          "marca": "Maxilub",
+          "compatibilidad": []
+        },
+        {
+          "id": "filtros-motorcraft",
+          "nombre": "Filtros de aceite",
+          "marca": "Motorcraft",
+          "compatibilidad": []
+        },
+        {
+          "id": "refrigerante-qualid",
+          "nombre": "Refrigerante",
+          "marca": "Qualid",
+          "compatibilidad": []
+        },
+        {
+          "id": "filtros-qualid",
+          "nombre": "Filtros de aceite y de aire",
+          "marca": "Qualid",
+          "compatibilidad": []
+        },
+        {
+          "id": "filtros-millard",
+          "nombre": "Filtros de aceite",
+          "marca": "Millard",
+          "compatibilidad": [
+            "Chevrolet Silverado"
+          ]
+        },
+        {
+          "id": "filtros-toyota",
+          "nombre": "Filtros originales",
+          "marca": "Toyota",
+          "compatibilidad": []
+        },
+        {
+          "id": "filtros-otros",
+          "nombre": "Filtros de aceite y de cabina",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Hilux",
+            "Toyota Fortuner",
+            "Toyota Land Cruiser 300",
+            "Toyota Tundra",
+            "Toyota Corolla",
+            "Toyota Camry",
+            "Ford Super Duty"
+          ]
+        },
+        {
+          "id": "rep-estoperas",
+          "nombre": "Estoperas y topes",
+          "compatibilidad": [
+            "Toyota Autana (serie 80)",
+            "Toyota Corolla",
+            "Jeep Grand Cherokee WK2",
+            "Jeep Grand Cherokee WK",
+            "Jeep Liberty KK"
+          ]
+        },
+        {
+          "id": "aceite-brava",
+          "nombre": "Aceites",
+          "marca": "Brava",
+          "compatibilidad": []
+        },
+        {
+          "id": "aceite-kn",
+          "nombre": "Aceites",
+          "marca": "K&N",
+          "compatibilidad": []
+        },
+        {
+          "id": "aceite-toyota",
+          "nombre": "Aceites",
+          "marca": "Toyota",
+          "compatibilidad": []
+        },
+        {
+          "id": "aceite-thunoler",
+          "nombre": "Aceites",
+          "marca": "Thunoler Plus",
+          "compatibilidad": []
+        },
+        {
+          "id": "amsoil",
+          "nombre": "Aceites, grasas y líquido de frenos",
+          "marca": "Amsoil",
+          "compatibilidad": []
+        },
+        {
+          "id": "aditivo-stp",
+          "nombre": "Aditivo",
+          "marca": "STP",
+          "compatibilidad": []
+        },
+        {
+          "id": "baterias-fulgor",
+          "nombre": "Baterías",
+          "marca": "Fulgor",
+          "compatibilidad": []
+        },
+        {
+          "id": "baterias-otras",
+          "nombre": "Baterías (otras marcas)",
+          "detalle": "Bestia Negra y otras",
+          "compatibilidad": []
+        },
+        {
+          "id": "octane-vp",
+          "nombre": "Octane booster",
+          "marca": "VP Racing",
+          "compatibilidad": []
         }
       ]
     },
@@ -220,62 +1246,208 @@
             "Mitsubishi Sportero 2008",
             "Kaicene F70 y modelo anterior",
             "Dongfeng",
-            "Changan"
+            "Changan",
+            "Toyota Land Cruiser Hembrita",
+            "Mitsubishi L200",
+            "JAC T9",
+            "Chevrolet Silverado",
+            "Toyota Tundra"
           ]
         },
         {
           "id": "santa-maria",
           "nombre": "Santa María eléctrica",
-          "compatibilidad": ["Ford Wildtrak", "Mitsubishi L200", "Toyota Hilux Revo"]
+          "compatibilidad": [
+            "Ford Wildtrak",
+            "Mitsubishi L200",
+            "Toyota Hilux Revo",
+            "Ford Ranger",
+            "Toyota Hilux Kavak",
+            "JAC T9",
+            "Chevrolet Silverado"
+          ]
         },
         {
           "id": "tapa-trifold",
           "nombre": "Tapa trifold",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Nissan Navara",
+            "Ford Ranger",
+            "Changan Kaicene F70",
+            "Ford F150",
+            "Mitsubishi L200",
+            "Toyota Tundra",
+            "JAC T9",
+            "Toyota Fortuner Dubai"
+          ]
         },
         {
           "id": "lonas",
           "nombre": "Lonas",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Toyota Hilux",
+            "Mitsubishi L200",
+            "Ford Ranger",
+            "Changan Kaicene F70",
+            "Chevrolet Silverado",
+            "JAC T9"
+          ]
         },
         {
           "id": "estribos-viper",
           "nombre": "Estribos",
           "marca": "Viper4WD",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Toyota Hilux",
+            "Toyota Land Cruiser Hembrita",
+            "Chevrolet Silverado"
+          ]
         },
         {
           "id": "estribos-trd",
           "nombre": "Estribos",
           "marca": "TRD Pro",
-          "compatibilidad": ["Toyota 4Runner"]
+          "compatibilidad": [
+            "Toyota 4Runner"
+          ]
         },
         {
           "id": "skid-arb",
           "nombre": "Skid plate",
           "marca": "ARB",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Mitsubishi L200",
+            "Toyota 4Runner",
+            "Toyota FJ Cruiser",
+            "Toyota Hilux Kavak",
+            "Toyota Fortuner",
+            "Toyota Hilux Revo"
+          ]
         },
         {
           "id": "defensa-viper",
           "nombre": "Defensa central y skid plate",
           "marca": "Viper4WD",
-          "compatibilidad": ["Kaicene"]
+          "compatibilidad": [
+            "Kaicene",
+            "JAC T9"
+          ]
         },
         {
           "id": "barras-tiro",
           "nombre": "Barras de tiro",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Toyota Fortuner Dubai",
+            "Toyota Hilux Kavak",
+            "Mitsubishi L200",
+            "Toyota Land Cruiser 250",
+            "Toyota Prado",
+            "Chevrolet Silverado",
+            "Toyota 4Runner",
+            "Toyota Hilux Revo",
+            "JAC T9",
+            "Changan Kaicene F70"
+          ]
         },
         {
           "id": "faros-fortuner",
           "nombre": "Faros traseros",
-          "compatibilidad": ["Toyota Fortuner 2012-2015"]
+          "compatibilidad": [
+            "Toyota Fortuner 2012-2015"
+          ]
         },
         {
           "id": "luces-katd",
           "nombre": "Luces",
           "marca": "KATD",
+          "compatibilidad": []
+        },
+        {
+          "id": "kn-limpiaparabrisas",
+          "nombre": "Limpiaparabrisas",
+          "marca": "K&N",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux Kavak",
+            "Toyota Fortuner",
+            "Toyota Roraima",
+            "Toyota Tacoma",
+            "Toyota Tundra",
+            "Toyota Corolla",
+            "Ford Ranger",
+            "Ford Explorer",
+            "Chevrolet Silverado",
+            "Chevrolet Tahoe",
+            "Chevrolet Avalanche",
+            "Jeep Grand Cherokee WK2",
+            "Jeep Grand Cherokee WK",
+            "Jeep Liberty KK"
+          ]
+        },
+        {
+          "id": "faros-arb",
+          "nombre": "Faros Intensity IQ",
+          "marca": "ARB",
+          "compatibilidad": []
+        },
+        {
+          "id": "luces-rigid",
+          "nombre": "Faros y barras LED",
+          "marca": "Rigid",
+          "compatibilidad": []
+        },
+        {
+          "id": "luces-viper",
+          "nombre": "Barras y faros LED",
+          "marca": "Viper",
+          "compatibilidad": []
+        },
+        {
+          "id": "luces-vision",
+          "nombre": "Bombillos LED",
+          "marca": "Vision",
+          "compatibilidad": []
+        },
+        {
+          "id": "luces-otras",
+          "nombre": "Estrobos y luces auxiliares",
+          "compatibilidad": []
+        },
+        {
+          "id": "estribos-otros",
+          "nombre": "Estribos (otras marcas)",
+          "compatibilidad": [
+            "JAC T9"
+          ]
+        },
+        {
+          "id": "skid-toyota",
+          "nombre": "Skid plate tipo TRD",
+          "marca": "Toyota",
+          "compatibilidad": [
+            "Toyota 4Runner"
+          ]
+        },
+        {
+          "id": "trd-accesorios",
+          "nombre": "Emblemas, rack de techo y tercer stop",
+          "marca": "TRD",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux"
+          ]
+        },
+        {
+          "id": "ganchos-aeroklas",
+          "nombre": "Ganchos metálicos",
+          "marca": "Aeroklas",
+          "compatibilidad": []
+        },
+        {
+          "id": "porta-equipaje",
+          "nombre": "Porta equipaje",
+          "marca": "Proparts",
           "compatibilidad": []
         }
       ]
@@ -283,21 +1455,28 @@
     {
       "id": "interior",
       "nombre": "Interior y sonido",
-      "subtitulo": "Alfombras, volantes y cornetas",
+      "subtitulo": "Alfombras, volantes, pantallas y sonido",
       "productos": [
         {
           "id": "alfombras-katd",
           "nombre": "Alfombras",
           "marca": "KATD",
           "detalle": "Para ciertos modelos",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Mitsubishi L200",
+            "Ford Territory"
+          ]
         },
         {
           "id": "alfombras-weathertech",
           "nombre": "Alfombras",
           "marca": "WeatherTech",
           "detalle": "Para ciertos modelos",
-          "compatibilidad": []
+          "compatibilidad": [
+            "Toyota Yaris",
+            "Toyota Land Cruiser 250",
+            "Toyota Prado"
+          ]
         },
         {
           "id": "alfombras-promat",
@@ -316,6 +1495,250 @@
           "nombre": "Cornetas para hogar y salidas",
           "marca": "JBL",
           "compatibilidad": []
+        },
+        {
+          "id": "kenwood",
+          "nombre": "Pantallas, amplificadores y cornetas",
+          "marca": "Kenwood",
+          "compatibilidad": []
+        },
+        {
+          "id": "ds18",
+          "nombre": "Bajos, medios y accesorios de sonido",
+          "marca": "DS18",
+          "compatibilidad": []
+        },
+        {
+          "id": "infinity",
+          "nombre": "Bajos",
+          "marca": "Infinity",
+          "compatibilidad": []
+        },
+        {
+          "id": "sonido-otros",
+          "nombre": "Amplificadores y bajos (otras marcas)",
+          "compatibilidad": [
+            "Toyota Land Cruiser serie 70 (Machito)"
+          ]
+        },
+        {
+          "id": "alfombras-arb",
+          "nombre": "Alfombras y cargoliners",
+          "marca": "ARB",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux Revo",
+            "Toyota Land Cruiser serie 70 (Machito)"
+          ]
+        },
+        {
+          "id": "alfombras-medida",
+          "nombre": "Alfombras a medida por vehículo",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Hilux Revo",
+            "Toyota Hilux Kavak",
+            "Toyota Fortuner Dubai",
+            "Toyota Fortuner",
+            "Toyota Land Cruiser 300",
+            "Toyota Land Cruiser 250",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Land Cruiser",
+            "Toyota Autana (serie 80)",
+            "Toyota Roraima",
+            "Toyota Prado",
+            "Toyota FJ Cruiser",
+            "Toyota Sequoia",
+            "Toyota Tacoma",
+            "Toyota Tundra",
+            "Toyota Corolla",
+            "Toyota Yaris",
+            "Toyota Camry",
+            "Ford Ranger",
+            "Ford F150",
+            "Ford Super Duty",
+            "Ford Explorer",
+            "Ford Territory",
+            "Ford Everest",
+            "Chevrolet Silverado",
+            "Chevrolet Tahoe",
+            "Jeep Grand Cherokee WK2",
+            "Jeep Grand Cherokee WK",
+            "Jeep Liberty KK",
+            "Mitsubishi L200",
+            "Mitsubishi Montero",
+            "Chevrolet D-Max",
+            "JAC T9",
+            "Changan Kaicene F70"
+          ]
+        },
+        {
+          "id": "pantallas-toyota",
+          "nombre": "Pantallas con cámara 360",
+          "marca": "Toyota",
+          "compatibilidad": [
+            "Toyota Land Cruiser 300",
+            "Toyota Land Cruiser 250",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Toyota Land Cruiser Hembrita",
+            "Toyota Prado"
+          ]
+        },
+        {
+          "id": "camara-360",
+          "nombre": "Cámara 360",
+          "marca": "Damon",
+          "compatibilidad": []
+        }
+      ]
+    },
+    {
+      "id": "accesorios",
+      "nombre": "Accesorios y herramientas",
+      "subtitulo": "Rescate, sensores TPMS, tuercas, merchandising y más",
+      "productos": [
+        {
+          "id": "compresor-arb",
+          "nombre": "Compresor Heavy Duty",
+          "marca": "ARB",
+          "compatibilidad": []
+        },
+        {
+          "id": "arb-rescate",
+          "nombre": "Recovery points y guantes",
+          "marca": "ARB",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Hilux Kavak",
+            "Toyota Fortuner Dubai",
+            "Toyota Fortuner"
+          ]
+        },
+        {
+          "id": "rescate-otros",
+          "nombre": "Equipos de rescate",
+          "detalle": "Factor55, Warn y otros",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Fortuner Dubai"
+          ]
+        },
+        {
+          "id": "arb-medidor",
+          "nombre": "Medidor de presión digital",
+          "marca": "ARB",
+          "compatibilidad": []
+        },
+        {
+          "id": "arb-cava",
+          "nombre": "Cava plegable",
+          "marca": "ARB",
+          "compatibilidad": []
+        },
+        {
+          "id": "arb-linterna",
+          "nombre": "Linterna LED recargable",
+          "marca": "ARB",
+          "compatibilidad": []
+        },
+        {
+          "id": "arb-merch",
+          "nombre": "Gorras, ropa y accesorios",
+          "marca": "ARB",
+          "compatibilidad": [
+            "Toyota Hilux Revo",
+            "Toyota Land Cruiser serie 70 (Machito)",
+            "Ford Ranger",
+            "Nissan Frontier"
+          ]
+        },
+        {
+          "id": "ome-merch",
+          "nombre": "Gorras y sillas",
+          "marca": "Old Man Emu",
+          "compatibilidad": []
+        },
+        {
+          "id": "llaveros-pirelli",
+          "nombre": "Llaveros",
+          "marca": "Pirelli",
+          "compatibilidad": []
+        },
+        {
+          "id": "llaveros-toyota",
+          "nombre": "Llaveros",
+          "marca": "Toyota",
+          "compatibilidad": []
+        },
+        {
+          "id": "tpms-toyota",
+          "nombre": "Sensores TPMS",
+          "marca": "Toyota",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Corolla"
+          ]
+        },
+        {
+          "id": "tpms-otros",
+          "nombre": "Sensores TPMS (otras marcas)",
+          "compatibilidad": [
+            "Ford Explorer",
+            "Chevrolet Silverado",
+            "Chevrolet Tahoe",
+            "Jeep Grand Cherokee WK2",
+            "Jeep Grand Cherokee WK",
+            "Jeep Liberty KK"
+          ]
+        },
+        {
+          "id": "tuercas-toyota",
+          "nombre": "Tuercas y espárragos originales",
+          "marca": "Toyota",
+          "compatibilidad": [
+            "Toyota Corolla"
+          ]
+        },
+        {
+          "id": "tuercas",
+          "nombre": "Tuercas, seguros y llaves",
+          "compatibilidad": [
+            "Toyota Land Cruiser 300",
+            "Toyota Land Cruiser 250",
+            "Toyota Tacoma",
+            "Toyota Tundra"
+          ]
+        },
+        {
+          "id": "valvulas",
+          "nombre": "Válvulas",
+          "compatibilidad": []
+        },
+        {
+          "id": "bidones-scepter",
+          "nombre": "Bidones",
+          "marca": "Scepter",
+          "compatibilidad": []
+        },
+        {
+          "id": "porta-herramientas",
+          "nombre": "Porta herramientas",
+          "marca": "Durabox",
+          "compatibilidad": []
+        },
+        {
+          "id": "starlink-viper",
+          "nombre": "Base de antena Starlink Mini",
+          "marca": "Viper",
+          "compatibilidad": []
+        },
+        {
+          "id": "accesorios-otros",
+          "nombre": "Otros accesorios",
+          "compatibilidad": [
+            "Toyota 4Runner",
+            "Toyota Land Cruiser serie 70 (Machito)"
+          ]
         }
       ]
     }

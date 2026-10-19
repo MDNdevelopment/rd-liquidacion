@@ -17,4 +17,9 @@ export const VEHICULOS = [
   { label: 'Tundra', terms: ['tundra'] },
   { label: 'Ranger', terms: ['ranger'] },
   { label: 'F150 / Super Duty', terms: ['f150', 'super duty'] },
+  { label: 'Explorer', terms: ['explorer'] },
+  { label: 'Grand Cherokee', terms: ['grand cherokee'] },
+  { label: 'Silverado / Tahoe', terms: ['silverado', 'tahoe', 'avalanche', 'suburban'] },
+  { label: 'L200', terms: ['l200'] },
+  { label: 'Corolla', terms: ['corolla'] },
 ];
